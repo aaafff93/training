@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>8.1. Функции</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='mystyle.css'>
+    <script src='myscript.js'></script>
+</head>
+<body>
+
+    <div>
+        <p>
+            1. Создать процедуру для вычисления периметра и площади квадрата по 
+            длине его стороны=<input type="number" id="side">.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="squarePerimeterAndArea()">
+        </p>
+        <p>
+            Ответ: <output id="output_1"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            2. Создать процедуру для вычисления объема и площади поверхности куба 
+            по длине его ребра=<input type="number" id="edge">.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="squareVolumeAndArea()">
+        </p>
+        <p>
+            Ответ: <output id="output_2"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            3.	Создать процедуру для вычисления длины окружности 
+            и площади круга по заданному значению радиуса=<input type="number" id="R">. 
+            (L= 2&pi;R, S=&pi;R<sup>2</sup>)
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="circumferenceAndArea()">
+        </p>
+        <p>
+            Ответ: <output id="output_3"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            4. Создать процедуру для вычисления периметра и площади прямоугольника по длинам его сторон.
+        </p>
+        <p>
+            Сторона A=<input type="number" id="A"> Сторона B=<input type="number" id="B">
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="perimeterAndArea()">
+        </p>
+        <p>
+            Ответ: <output id="output_4"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            5. Вводятся 
+            A=<input type="number" id="number_A">, 
+            B=<input type="number" id="number_B">, 
+            C=<input type="number" id="number_C">, 
+            D=<input type="number" id="number_D">. 
+            Поменять местами A и C, B и D, 
+            создав процедуру обмена значениями 2-х переменных.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="exchangeOfValues()">
+        </p>
+        <p>
+            Ответ: <output id="output_5"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            6. Создать процедуру для вывода таблицы значений функции y=2sin3x + 1 
+            для х  
+            от a=<input type="number" id="a_6"> до 
+            b=<input type="number" id="b_6"> 
+            с шагом h=<input type="number" id="h_6">. 
+            Вывести две таблицы: а) для х от 1 до 2 с шагом 0.1 и б) для  х от 5 до 10 с шагом 0.5.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="sinX()">
+        </p>
+        <p>
+            Ответ: <output id="output_6"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            7. Создать процедуру для вывода таблицы значений функции 
+            y=tg(x + 1) для х от 
+            a=<input type="number" id="a_7"> до 
+            b=<input type="number" id="b_7"> с шагом 
+            h=<input type="number" id="h_7">. 
+            Вывести две таблицы: 
+            а) для  х от 2 до 4 с шагом 0.2 и б) для  х от 1 до 10 с шагом 0.5.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="tanX()">
+        </p>
+        <p>
+            Ответ: <output id="output_7"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            8. Создать процедуру для вывода таблицы значений функции y = x<sup>2</sup> + 3 для х от 
+            a=<input type="number" id="a_8"> до 
+            b=<input type="number" id="b_8"> с шагом 
+            h=<input type="number" id="h_8">. 
+            Вывести две таблицы: 
+            а) для  х от 1 до 2 с шагом 0.1 и б) для  х от 2 до 5 с шагом 0.5.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="functionX()">
+        </p>
+        <p>
+            Ответ: <output id="output_8"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            9. Создать процедуру для вывода таблицы значений функции y=cos(x + 1)<sup>2</sup> 
+            для х от 
+            a=<input type="number" id="a_9"> до 
+            b=<input type="number" id="b_9"> с шагом 
+            h=<input type="number" id="h_9">. 
+            Вывести две таблицы: 
+            а) для х от 2 до 3 с шагом 0.1 и б) для  х от -2 до 3 с шагом 0.5.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="functionCos()">
+        </p>
+        <p>
+            Ответ: <output id="output_9"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            10. Найти минимальное  из 
+            A=<input type="number" id="A_10">, 
+            B=<input type="number" id="B_10">, 
+            C=<input type="number" id="C_10">, 
+            D=<input type="number" id="D_10">, 
+            создав функцию выбора минимального из двух произвольных чисел.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="showMininun()">
+        </p>
+        <p>
+            Ответ: <output id="output_10"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            11. Два прямоугольных треугольника заданы своими катетами. 
+            Определить, у какого из них площадь больше 
+            (создать функцию для вычисления площади прямоугольного треугольника по его катетам).
+        </p>
+        <p>
+            Первый треугольник:<br>
+            Катет 1:<input type="number" id="cathet_1_1"> Катет 2:<input type="number" id="cathet_1_2">
+        </p>
+        <p>
+            Второй треугольник:<br>
+            Катет 1:<input type="number" id="cathet_2_1"> Катет 2:<input type="number" id="cathet_2_2">
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="triangleAreasComparision()">
+        </p>
+        <p>
+            Ответ: <output id="output_11"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            12. Два прямоугольника заданы координатами вершин. 
+            Определить, периметр какого из них больше (использовать функцию нахождения периметра прямоугольника).
+        </p>
+        <p>
+            Координаты первого:<br>
+            A=(<input type="number" id="Ax_1">, <input type="number" id="Ay_1">)<br>
+            B=(<input type="number" id="Bx_1">, <input type="number" id="By_1">)<br>
+            C=(<input type="number" id="Cx_1">, <input type="number" id="Cy_1">)<br>
+            D=(<input type="number" id="Dx_1">, <input type="number" id="Dy_1">)<br>
+            Координаты второго:<br>
+            A=(<input type="number" id="Ax_2">, <input type="number" id="Ay_2">)<br>
+            B=(<input type="number" id="Bx_2">, <input type="number" id="By_2">)<br>
+            C=(<input type="number" id="Cx_2">, <input type="number" id="Cy_2">)<br>
+            D=(<input type="number" id="Dx_2">, <input type="number" id="Dy_2">)<br>
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="perimeter()">
+        </p>
+        <p>
+            Ответ: <output id="output_12"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            13.	Два прямоугольных треугольника заданы своими катетами. 
+            Определить, у какого из них периметр больше 
+            (создать функцию для вычисления периметра прямоугольного треугольника по его катетам).
+        </p>
+        <p>
+            Первый треугольник:<br>
+            Катет 1:<input type="number" id="cath_1_1"> Катет 2:<input type="number" id="cath_1_2">
+        </p>
+        <p>
+            Второй треугольник:<br>
+            Катет 1:<input type="number" id="cath_2_1"> Катет 2:<input type="number" id="cath_2_2">
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="trianglePerimetersComparision()">
+        </p>
+        <p>
+            Ответ: <output id="output_13"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            14.	Вводятся 2 натуральных числа. 
+            Определить, у какого из них среднее арифметическое цифр больше 
+            (создать функцию для нахождения среднего арифметического цифр произвольного натурального числа).  
+        </p>
+        <p>
+            Первое число:<input type="number" id="firstNumber"><br>
+            Второе число:<input type="number" id="secondNumber"><br>
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="arithmeticMean()">
+        </p>
+        <p>
+            Ответ: <output id="output_14"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            15. Вводятся 3 натуральных числа. 
+            Найти сумму цифр каждого из них 
+            (создать функцию для нахождения суммы цифр произвольного натурального числа).  
+        </p>
+        <p>
+            Первое число:<input type="number" id="firstNum"><br>
+            Второе число:<input type="number" id="secondNum"><br>
+            Третье число:<input type="number" id="thirdNum"><br>
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="sumOfNumbers()">
+        </p>
+        <p>
+            Ответ: <output id="output_15"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            16, 18. Вычислить (
+            <input class="powers" type="number" id="x_1_16"><sup><input type="number" id="y_1_16"></sup> + 
+            <input class="powers" type="number" id="x_2_16"><sup><input type="number" id="y_2_16"></sup>) / 
+            <input class="powers" type="number" id="x_3_16"><sup><input type="number" id="y_3_16"></sup>, 
+            создав функцию для вычисления степени x<sup>y</sup>
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="power_16()">
+        </p>
+        <p>
+            Ответ: <output id="output_16"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            17. Вычислить 
+            <input class="powers" type="number" id="x_1_17"><sup><input type="number" id="y_1_17"></sup> + 
+            <input class="powers" type="number" id="x_2_17"><sup><input type="number" id="y_2_17"></sup> + 
+            <input class="powers" type="number" id="x_3_17"><sup><input type="number" id="y_3_17"></sup>, 
+            создав функцию для вычисления степени.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="power_17()">
+        </p>
+        <p>
+            Ответ: <output id="output_17"></output>
+        </p>
+    </div>   
+
+</body>
+</html>

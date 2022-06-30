@@ -1,0 +1,312 @@
+<html>
+    <head>
+        <title>Привет</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <script src="myscript.js"></script>
+
+        <div>
+            <p>
+                1. Билет называется «счастливым», если в его номере 
+                сумма первых трех цифр равно сумме последних трех. 
+                Написать программу, подсчитывающую количество тех «счастливых» билетов, у которых сумма трех цифр равна 13.
+            </p>
+            <p>
+                <button onclick="luckyTicket()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_1"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                В поле по уборке урожая работало N=<input type="number" id="number_N"> комбайнов. 
+                Первый комбайн работал m=<input type="number" id="number_m"> ч., 
+                а каждый следующий на 20 минут больше, чем предыдущий. 
+                Написать программу рассчитывающую, сколько времени проработали N комбайнов.
+            </p>
+            <p>
+                <button onclick="combineWorkingHours()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_2"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                3. Написать программу, рассчитывающую сумму денег 
+                по вкладу при вложении начальной суммы с фиксированной 
+                процентной ставкой дохода через определенное количество лет. 
+                Пользователь должен вводить с клавиатуры 
+                начальный вклад=<input type="number" id="contribution">, 
+                число лет=<input type="number" id="years"> и 
+                процентную ставку=<input type="number" id="rateOfInterest">.
+            </p>
+            <p>
+                <button onclick="sumOfMoney()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_3"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                4. Гражданин 1 июля открыл счет в банке, вложив S=<input type="number" id="numb_S"> руб. 
+                Через каждый месяц размер вклада увеличивается на N=<input type="number" id="increasingTheContribution">% 
+                от имеющейся суммы. Определить прирост суммы вклада за 1,2,...,10 месяц.
+            </p>
+            <p>
+                <button onclick="increaseInTheAmount()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_4"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                5. Написать программу, вычисляющую, сколько лет потребуется для того, 
+                чтобы при заданной процентной ставке=<input type="number" id="rate"> и 
+                величине начального вклада=<input type="number" id="deposit"> 
+                сумма на счете 
+                достигла запрашиваемого значения=<input type="number" id="desiredValue">.
+            </p>           
+            <p>
+                <button onclick="amountAfterSeveralYears()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_5"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                6. Ежемесячная стипендия студента составляет А=<input type="number" id="scholarship"> руб., 
+                а расходы на проживание превышают стипендию и составляют 
+                В=<input type="number" id="expenses"> руб. в месяц. 
+                Рост цен ежемесячно увеличивает расходы на N=<input type="number" id="percent">%. 
+                Составьте программу расчета суммы денег, которую необходимо 
+                единовременно попросить у родителей, чтобы можно было прожить учебный год (10 месяцев), 
+                используя только эти деньги и - стипендию.                              
+            </p>           
+            <p>
+                <button onclick="scholarshipDeficit()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_6"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                7. Составить программу, которая запрашивает пароль 
+                (например, четырехзначное число) до тех пор, пока он не будет правильно введен.                          
+            </p>
+            <p>
+                <div class="div_with_fieldset">
+                    <fieldset>
+                        <legend>Логин</legend>
+                        <input type="text" id="login">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Пароль</legend>
+                        <input type="password" id="password">
+                    </fieldset>
+                    <p>
+
+                        <button onclick="passwordVerification()">Результат</button>
+                    </p>
+                    <p>
+                        Ответ: <output id="output_7"></output>
+                    </p>
+                </div>
+                <div class="div_with_image">
+                    <img src="" id="image_Cat">
+                </div>         
+            </p>        
+        </div>
+
+        <div>
+            <p>
+                8. Известно количество осадков, выпавших за первые 7 дней Октября в течение 2-х лет. 
+                Написать программу, определяющую верно ли, что количество осадков за первый год превысило соответствующее количество 2-ого года?                      
+            </p> 
+            <p>
+                За первый год:<br>
+                <input type="number" id="1">
+                <input type="number" id="2">
+                <input type="number" id="3">
+                <input type="number" id="4">
+                <input type="number" id="5">
+                <input type="number" id="6">
+                <input type="number" id="7">
+            </p>
+            <p>
+                За второй год:<br>
+                <input type="number" id="11">
+                <input type="number" id="12">
+                <input type="number" id="13">
+                <input type="number" id="14">
+                <input type="number" id="15">
+                <input type="number" id="16">
+                <input type="number" id="17">
+            </p>          
+            <p>
+                <button onclick="comparisonOfPrecipitation()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_8"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                9. Три группы студентов, в каждой из которых N=<input type="number" id="num_N"> человек, 
+                в сессию сдавали по три экзамена. Написать программу, 
+                определяющую лучшую по среднему баллу группу.                         
+            </p>           
+            <p>
+                <button onclick="theBestGroupOfStudents()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_9"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                10. Известны данные о температуре воздуха в течение месяца. 
+                Составить программу, определяющую сколько дней в месяце была минусовая погода.                  
+            </p>           
+            <p>
+                <button onclick="monthlyTemperature()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_10"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                11. Известен рост каждого человека из группы. 
+                Составить программу, вычисляющую на 
+                сколько рост самого высокого из них превышает рост самого низкого.                           
+            </p>           
+            <p>
+                <button onclick="heightDifference()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_11"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                12. Известны оценки по физики каждого ученика класса. 
+                Написать программу для определения количества пятерок и количество троек.                         
+            </p>           
+            <p>
+                <button onclick="gradesInPhysics()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_12"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                13. Известна масса каждого груза загружаемого автомобиля. 
+                Написать программу, выясняющую не превысила ли общая масса всех грузов грузоподъемность автомобиля.                          
+            </p>      
+            <p>
+                Грузоподъёмность: <input type="number" id="loadCapacity">кг.
+            </p>     
+            <p>
+                <button onclick="tonnageChecking()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_13"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                14. Имеется кусок ткани длинной M=<input type="number" id="fabricLength"> метров. 
+                От него последовательно отрезаются куски равной длины = <input type="number" id="lengthOfCut">. 
+                Все данные по использованию ткани заносятся в программу. 
+                Программа должна выдать сообщение о том, что материала не хватает, 
+                если будет затребован кусок ткани больше длины, чем имеется.                       
+            </p>       
+            <p>
+                <button onclick="cuttingOffTheFabric()">Отрезать</button>
+            </p>
+            <p>
+                Ответ: <output id="output_14"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                15. Бизнесмен взял ссуду M=<input type="number" id="loan"> тысяч рублей в банке 
+                под N=<input type="number" id="annualInterest">% годовых. 
+                Написать программу, определяющую через сколько лет его долг 
+                превысит S=<input type="number" id="amountOfDebt"> тысяч рублей, 
+                если за это время он не будет отдавать долг.                   
+            </p>       
+            <p>
+                <button onclick="excessDebt()">Отрезать</button>
+            </p>
+            <p>
+                Ответ: <output id="output_15"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                16. Начав тренировки, спортсмен в первый день пробежал V=<input type="number" id="number_V"> км. 
+                Каждый день он увеличивал дневную норму на M=<input type="number" id="number_M">% нормы предыдущего дня. 
+                Написать программу, вычисляющую какой суммарный путь пробежит спортсмен за N=<input type="number" id="n_N"> дней?              
+            </p>       
+            <p>
+                <button onclick="totalDistance()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_16"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                17. Спортсмен пробежал в первый день тренировки S=<input type="number" id="num_S"> км. 
+                Каждый следующий день он увеличивал дистанцию на N1=<input type="number" id="num_N1">% от пробега предыдущего дня. 
+                Определить, после кого дня дистанция пробега увеличится в два раза относительно первого дня тренировки.            
+            </p>       
+            <p>
+                <button onclick="totalDistanceDoubling()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_17"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                Вклад в банк составил S=<input type="number" id="n_S"> р. 
+                Ежемесячная процентная ставка N1=<input type="number" id="n_N1">%. 
+                По нечетным месяцам на вклад поступало дополнительно N2=<input type="number" id="n_N2">% от первоначального вклада. 
+                Сколько денег будет на счету через год.     
+            </p>       
+            <p>
+                <button onclick="depositAmount()">Результат</button>
+            </p>
+            <p>
+                Ответ: <output id="output_18"></output>
+            </p>
+        </div>
+
+    </body>
+</html>

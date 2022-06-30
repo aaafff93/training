@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Калькулятор</title>
+<script type="text/javascript">
+    function myfunc()
+    {
+    var a,b,c;
+    if (document.myform.Data.value=="C") {
+        a=parseInt(document.myform.X.value);
+        b=parseInt(document.myform.Y.value);
+    }
+    if (document.myform.Data.value=="V"){
+        a=parseFloat(document.myform.X.value);
+        b=parseFloat(document.myform.Y.value);
+    }
+    switch(document.myform.Oper.value)
+    {
+        case "Sum": c=a+b; break;
+        case "Sub": c=a-b; break;	
+        case "Mult":c=a*b;break;
+        case "Del": c=a/b; break;		
+    }
+        document.myform.Otvet.value=c;
+        return true;
+}
+</script>
+
+    </head>
+    <body>
+        <form name="myform">
+            <p > Форма ввода данных</p>
+            Введите x
+            <input type="text" name="X" size="10">
+            <br><br>
+            Введите y
+            <input type="text" name="Y" size="10">
+            <br><br>
+            Ответ
+            <input type="text" name="Otvet" size="10">
+            <br><br>
+            Тип данных
+            <input type="radio" name="Data" value ="C" checked>Целые числа
+            <input type="radio" name="Data" value ="V">Дробные числа
+            <br>
+            Операция
+            <select name="Oper">
+                <option  value ="Sum">Сложение
+                <option  value ="Sub">Разность 
+                <option  value ="Mult">Произведение 
+                <option  value ="Del">Частное
+            </select>
+            <br>
+            <input type="button" name="button1" value ="Расчет" onClick="myfunc()">
+        </form>
+        </body>       
+</html>

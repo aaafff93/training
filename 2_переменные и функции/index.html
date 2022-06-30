@@ -1,0 +1,308 @@
+<html>
+    <head>
+        <title>Привет</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <script src="myscript.js"></script>
+
+        <div>           
+            1. Нефтебаза отпустила за два дня <input id="S" type="number"/> л. бензина. 
+            Во второй день база отпустила 
+            на <input id="V" type="number"/> л. больше. 
+            Сколько литров бензина база отпустила отдельно за каждый день?
+            <p>
+                <button id="button1" onclick="oilDepot(
+                                                        document.getElementById('S').value, 
+                                                        document.getElementById('V').value
+                                                        )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output1"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            2. Составьте программу для определения сдачи после покупки в магазине товара: 
+            кроссовок стоимостью <input id="sneakersPrice" type="number"/> руб., 
+            футболки стоимостью <input id="shirtPrice" type="number"/> руб., 
+            мяча стоимостью <input id="ballPrice" type="number"/> руб. 
+            Исходная сумма, выделенная на покупку <input id="totalSum" type="number"/> руб. 
+            В случае нехватки денег сдача получится отрицательной.
+            <p>
+                <button id="button2" onclick="change(
+                                                    document.getElementById('sneakersPrice').value, 
+                                                    document.getElementById('shirtPrice').value, 
+                                                    document.getElementById('ballPrice').value, 
+                                                    document.getElementById('totalSum').value                                                                   
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output2"></output>                                                                                             
+            </p>                                                    
+        </div>
+      
+        <div>           
+            3. В течение месяца продавец доставлял на дом <input id="litersPerDay" type="number"> л молока в день. 
+            В августе молоко стоило <input id="pricePerLiter" type="number"> руб. за литр. 
+            С первого сентября цена молока увеличилась на <input id="priceIncrease" type="number"> руб. 
+            Сколько надо заплатить продавцу за все доставленное молоко в конце сентября? 
+            Количество покупаемого молока осталось прежним.
+            <p>
+                <button id="button3" onclick="milkDelivery(
+                                                        document.getElementById('litersPerDay').value, 
+                                                        document.getElementById('pricePerLiter').value, 
+                                                        document.getElementById('priceIncrease').value
+                                                        )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output3"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            4. Отделочная фирма хочет оклеить обоями длинную стену в доме заказчика. 
+            Длина этой стены равна <input id="A" type="number"> и высота <input id="B" type="number">. 
+            Рулон обоев имеет длину <input id="X" type="number"> м и ширину <input id="Y" type="number"> м. 
+            Сколько будут стоить обои для всей стены, если цена одного рулона <input id="K" type="number"> руб?
+            <p>
+                <button id="button4" onclick="wallpaper(
+                                                        document.getElementById('A').value, 
+                                                        document.getElementById('B').value, 
+                                                        document.getElementById('X').value, 
+                                                        document.getElementById('Y').value, 
+                                                        document.getElementById('K').value 
+                                                        )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output4"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            5. За год квартплата повышалась дважды. Первый раз на <input id="N1" type="number">%, 
+            а второй на <input id="N2" type="number">%. 
+            Год назад семья Ивановых платила квартплату <input id="rentNow" type="number"> рублей в месяц. Сколько они платят сейчас.
+            <p>
+                <button id="button5" onclick="rent(
+                                                    document.getElementById('N1').value, 
+                                                    document.getElementById('N2').value, 
+                                                    document.getElementById('rentNow').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output5"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            6. Магазин в феврале продал товаров на <input id="productTotalPrice" type="number"> млн. р., 
+            что на <input id="percent_N1" type="number">% больше, чем в январе. 
+            На какую сумму были проданы товары в январе?
+            <p>
+                <button id="button6" onclick="goodsSale(
+                                                    document.getElementById('productTotalPrice').value, 
+                                                    document.getElementById('percent_N1').value, 
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output6"></output>                                                                                             
+            </p>                                                    
+        </div>
+       
+        <div>           
+            7. Первый продавец продает сахар со скоростью <input id="firstSeller" type="number"> кг в час, 
+            а второй на <input id="secondSellerPercent" type="number">% быстрее, 
+            сколько сахара им удастся продать за <input id="workingTime" type="number"> часов работы?
+            <p>
+                <button id="button7" onclick="saleOfSugar(
+                                                    document.getElementById('firstSeller').value, 
+                                                    document.getElementById('secondSellerPercent').value, 
+                                                    document.getElementById('workingTime').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output7"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            8. Составить программу подсчета размера оплаты за электроэнергию по введенным 
+            значениям расхода электроэнергии и тарифа (тариф – стоимость 1кВт*ч). 
+            Расход: <input id="powerСonsumption" type="number"> Тариф: <input id="electricityTax" type="number"> 
+            <p>
+                <button id="button8" onclick="paymentForEnergy(
+                                                    document.getElementById('powerСonsumption').value, 
+                                                    document.getElementById('electricityTax').value, 
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output8"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            9. В трех магазинах продавалось A = <input id="inAllStores" type="number"> штук столов определенной модели. 
+            При том, в первом и втором магазинах реализовывалось B = <input id="firstAndSecond" type="number">  штук столов, 
+            а во втором и третьем продавалось С = <input id="secondAndThird" type="number"> штук. Написать программу, 
+            которая по введенным значениям А, B и С определять сколько штук столов продавалось в каждом магазине.
+            <p>
+                <button id="button9" onclick="tablesInTheStore(
+                                                    document.getElementById('inAllStores').value, 
+                                                    document.getElementById('firstAndSecond').value,  
+                                                    document.getElementById('secondAndThird').value 
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output9"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            10. Известен объем продукции, 
+            выпускаемый шестью предприятиями отрасли = <input id="totalProductionVolume" type="number">. 
+            Вычислить средний объем продукции, выпускаемый одним предприятием.
+            <p>
+                <button id="button10" onclick="averageProductionVolume(
+                                                    document.getElementById('totalProductionVolume').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output10"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            11. Старинными русскими денежными единицами являются: 1 рубль – 100 копеек, 
+            1 гривна - 10 копеек, 1 алтын - 3 копейки, 1 полушка - 0,25 копейки. 
+            Имеется <input id="kopejki" type="number"> копеек. Составить программу для представления имеющейся суммы в рублях, гривнах, алтынах и полушках.
+            <p>
+                <button id="button11" onclick="recalculation(
+                                                    document.getElementById('kopejki').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output11"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            12. Написать программу, которая определяет сколько полных минут и секунд 
+            содержится в <input id="seconds" type="number"> секундах?
+            <p>
+                <button id="button12" onclick="secondsToMinutes(
+                                                    document.getElementById('seconds').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output12"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            13. Из <input id="numberOfWatermelons" type="number"> арбузов 
+            <input id="numberOfBadWatermelons" type="number"> оказались незрелыми. 
+            Сколько процентов всех арбузов составили незрелыми? 
+            Написать программу для решения поставленной задачи.
+            <p>
+                <button id="button13" onclick="badWatermelons(
+                                                    document.getElementById('numberOfWatermelons').value, 
+                                                    document.getElementById('numberOfBadWatermelons').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output13"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            14. Цена товара понизилась на <input id="firstPriceDrop" type="number">, 
+            а затем ещё на <input id="secondPriceDrop" type="number">. 
+            На сколько процентов понизилась цена товара по сравнению с первоначальной? 
+            Сколько стал стоить товар, 
+            если его первоначальная стоимость была <input id="initialСost" type="number"> р.?
+            <p>
+                <button id="button14" onclick="productPrice(
+                                                    document.getElementById('firstPriceDrop').value, 
+                                                    document.getElementById('secondPriceDrop').value, 
+                                                    document.getElementById('initialСost').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output14"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            15. Выручка магазина за месяц январь составила <input id="revenueForTheJanuary" type="number"> р. 
+            Выручка за месяц февраль составила ½ от выручки за предыдущий месяц. 
+            А за месяц март выручка выросла на <input id="revenueGrowth" type="number">% по отношению к февралю. 
+            Какова суммарная выручка магазина за три месяца?
+            <p>
+                <button id="button15" onclick="totalRevenue(
+                                                    document.getElementById('revenueForTheJanuary').value, 
+                                                    document.getElementById('revenueGrowth').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output15"></output>                                                                                             
+            </p>                                                    
+        </div>
+        
+        <div>           
+            16. Предприятие реализовало три вида изделия по 
+            <input id="product_A" type="number">, 
+            <input id="product_B" type="number">, 
+            <input id="product_C" type="number"> шт. соответственно. 
+            Стоимость реализации одного изделия каждого вида 
+            <input id="cost_X" type="number"> р., 
+            <input id="cost_Y" type="number"> р., 
+            <input id="cost_Z" type="number"> р. соответственно. 
+            Рассчитать удельный вес каждого изделия в 
+            суммарной выручке продажи изделий.
+            <p>
+                <button id="button16" onclick="specificGravity(
+                                                    document.getElementById('product_A').value, 
+                                                    document.getElementById('product_B').value, 
+                                                    document.getElementById('product_C').value, 
+                                                    document.getElementById('cost_X').value, 
+                                                    document.getElementById('cost_Y').value, 
+                                                    document.getElementById('cost_Z').value 
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output16"></output>                                                                               
+            </p>                                                    
+        </div>
+
+        <div>           
+            17. Мука подорожала на <input id="riseInPrice" type="number">%, 
+            а через месяц подешевела на <input id="fallInPrice" type="number">%. 
+            На сколько процентов изменилась цена муки в конечном итоге?
+            <p>
+                <button id="button17" onclick="priceOfFlour(
+                                                    document.getElementById('riseInPrice').value, 
+                                                    document.getElementById('fallInPrice').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output17"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+        <div>           
+            18. Выручка магазина за первый год составила <input id="revenueForFirstYear" type="number"> р. 
+            Выручка за второй год составила 2/3 от выручки за предыдущий год. 
+            На сколько процентов снизилась выручка за второй год относительно первого?
+            <p>
+                <button id="button18" onclick="revenueDecline(
+                                                    document.getElementById('revenueForFirstYear').value
+                                                    )">Вычислить</button>
+            </p>
+            <p>
+                Ответ: <output id="output18"></output>                                                                                             
+            </p>                                                    
+        </div>
+
+    </body>
+</html>

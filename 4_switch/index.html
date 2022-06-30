@@ -1,0 +1,337 @@
+<html>
+    <head>
+        <title>Привет</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <script src="myscript.js"></script>
+
+        <form name="form_1">
+            <p>
+                1. Имеется пронумерованный список деталей: 
+                1) шуруп, 2) гайка, 3) винт, 4) гвоздь, 5) болт. 
+                Составить программу, которая по номеру детали выводит на экран ее название.
+            </p>  
+            <p>
+                1<input name="detail" type="radio" value="screw" onclick="details()">&nbsp;&nbsp;
+                2<input name="detail" type="radio" value="nutbolt" onclick="details()">&nbsp;&nbsp;
+                3<input name="detail" type="radio" value="grommet" onclick="details()">&nbsp;&nbsp;
+                4<input name="detail" type="radio" value="tack" onclick="details()">&nbsp;&nbsp;
+                5<input name="detail" type="radio" value="bolt" onclick="details()">
+            </p>
+            <p>
+                <output name="output_1">
+            </p>                
+        </form>
+
+        <form name="form_2">
+            <p>
+                2. Написать программу, которая по вводимому числу от 1 до 5 (номеру курса) 
+                выдает соответствующее сообщение «Привет, k-курсник». 
+                Например, если k=1 «Привет, первокурсник»; при k=4 «Привет, четверокурсник».
+            </p>  
+            <p>
+                Курс: <input name="course" type="text">
+                <input type="button" value="Результат" onclick="showCourse()">
+            </p>
+            <p>
+                <output name="output_2">
+            </p>                
+        </form>
+
+        <form name="form_3">
+            <p>
+                3. Написать программу, которая по данному натуральному числу от 1 до 12 (номеру месяца) 
+                выдает все приходящиеся на этот месяц праздничные дни 
+                (например, если введено число 1, то: 1 января - Новый год, 7 января - Рождество).
+            </p>  
+            <p>
+                Месяц: <input name="holidays" type="number">
+                <input type="button" value="Результат" onclick="showHolidays()">
+            </p>
+            <p>
+                <output name="output_3">
+            </p>                
+        </form>
+
+        <form name="form_4">
+            <p>
+                4. Пусть элементами равностороннего треугольника являются: 
+                1) сторона a; 
+                2) площадь S; 
+                3) высота h; 
+                4) радиус вписанной окружности r; 
+                5) радиус описанной окружности R. 
+                Составить программу, которая по заданному номеру и значению 
+                соответствующего элемента вычисляла бы значение всех остальных элементов треугольника.
+            </p>  
+            <p>
+                a<input name="triangle" type="radio" value="a">&nbsp;&nbsp;
+                S<input name="triangle" type="radio" value="S">&nbsp;&nbsp;
+                h<input name="triangle" type="radio" value="h">&nbsp;&nbsp;
+                r<input name="triangle" type="radio" value="r">&nbsp;&nbsp;
+                R<input name="triangle" type="radio" value="R">               
+            </p>
+            <p>
+                <input name="triangleValue" type="number">
+                <input type="button" value="Результат" onclick="calculateTriangle()">
+            </p>
+            <p>
+                <output name="output_4">
+            </p>                
+        </form>
+
+        <form name="form_5">
+            <p>
+                5. Даны два действительных положительных числа x и y. 
+                Тригонометрические действия над числами пронумерованы 
+                (1 - sin, 2 - cos, 3 - tg, 4 - ctg). 
+                Составить программу, которая выполняет то или иное действие над числами x и y 
+                в соответствии с выбранным номером тригонометрического действия.
+            </p>  
+            <p>
+                sin<input name="trigonometry" type="radio" value="sin">&nbsp;&nbsp;
+                cos<input name="trigonometry" type="radio" value="cos">&nbsp;&nbsp;
+                tg<input name="trigonometry" type="radio" value="tg">&nbsp;&nbsp;
+                ctg<input name="trigonometry" type="radio" value="ctg">&nbsp;&nbsp;            
+            </p>
+            <p>
+                <input name="trig_X" type="number">
+                <input name="trig_Y" type="number">
+                <input type="button" value="Результат" onclick="calculateTrigonometry()">
+            </p>
+            <p>
+                <output name="output_5">
+            </p>                
+        </form>
+
+        <form name="form_6">
+            <p>
+                6. Для каждой введенной цифры (0–9) вывести соответствующее ей 
+                название на английском языке (0 - zero, 1 - one, 2 - two, ...).
+            </p>  
+            <p>
+                <input type="text" name="numbers">              
+            </p>
+            <p>
+                <input type="button" value="Результат" onclick="numbersInEnglish()">
+            </p>
+            <p>
+                <output name="output_6">
+            </p>                
+        </form>
+
+        <form name="form_7">
+            <p>
+                7. Составить программу, которая по данному числу (1 - 12) 
+                выводит название соответствующего ему месяца.
+            </p>  
+            <p>
+                <input type="number" name="month">              
+            </p>
+            <p>
+                <input type="button" value="Результат" onclick="showMonth()">
+            </p>
+            <p>
+                <output name="output_7">
+            </p>                
+        </form>
+
+        <form name="form_8">
+            <p>
+                8. Составить программу, позволяющую получить словесное 
+                описание отметок (1 - плохо, 2 - неудовлетворительно, 3 - удовлетворительно, 4 - хорошо, 5 - отлично).
+            </p>  
+            <p>
+                1<input name="grades" type="radio" value="1" onclick="showGrades()">&nbsp;&nbsp;
+                2<input name="grades" type="radio" value="2" onclick="showGrades()">&nbsp;&nbsp;
+                3<input name="grades" type="radio" value="3" onclick="showGrades()">&nbsp;&nbsp;
+                4<input name="grades" type="radio" value="4" onclick="showGrades()">&nbsp;&nbsp;
+                5<input name="grades" type="radio" value="5" onclick="showGrades()">                 
+            </p>
+            <p>
+                <output name="output_8">
+            </p>                
+        </form>
+
+        <form name="form_9">
+            <p>
+                9. Написать программу, которая бы по введенному номеру единицы измерения 
+                (1 - дециметр, 2 - километр, 3 - метр, 4 - миллиметр, 5 - сантиметр) 
+                и длине отрезка L выдавала бы соответствующее значение длины отрезка в метрах.
+            </p>  
+            <p>
+                Дециметр<input name="units" type="radio" value="dm" onclick="showUnits()">&nbsp;&nbsp;
+                Километр<input name="units" type="radio" value="km" onclick="showUnits()">&nbsp;&nbsp;
+                Метр<input name="units" type="radio" value="m" onclick="showUnits()">&nbsp;&nbsp;
+                Миллиметр<input name="units" type="radio" value="mm" onclick="showUnits()">&nbsp;&nbsp;
+                Сантиметр<input name="units" type="radio" value="cm" onclick="showUnits()">                 
+            </p>
+            <p>
+                Метры: <input type="number" name="unit">
+            </p>
+            <p>
+                <output name="output_9">
+            </p>                
+        </form>
+
+        <form name="form_10">
+            <p>
+                10. Написать программу, которая бы по введенному номеру единицы измерения 
+                (1 - килограмм, 2 - миллиграмм, 3 - грамм, 4 - тонна, 5 - центнер) и массе М 
+                выдавала бы соответствующее значение массы в килограммах.
+            </p>  
+            <p>
+                Масса: <input type="number" name="weight">
+                Килограмм<input name="weights" type="radio" value="kg" onclick="showWeight()">&nbsp;&nbsp;
+                Миллиграмм<input name="weights" type="radio" value="mg" onclick="showWeight()">&nbsp;&nbsp;
+                Грамм<input name="weights" type="radio" value="g" onclick="showWeight()">&nbsp;&nbsp;
+                Тонна<input name="weights" type="radio" value="t" onclick="showWeight()">&nbsp;&nbsp;
+                Центнер<input name="weights" type="radio" value="c" onclick="showWeight()">                 
+            </p>
+            <p>
+                <output name="output_10">
+            </p>                
+        </form>
+
+        <form name="form_11">
+            <p>
+                11. Даны два действительных положительных числа x и y. 
+                Арифметические действия над числами пронумерованы 
+                (1 - сложение, 2 - вычитание, 3 - умножение, 4 - деление). 
+                Составить программу, которая по введенному номеру выполняет то или иное действие над числами.
+            </p>  
+            <p>
+                Сложение<input name="operations" type="radio" value="sum">&nbsp;&nbsp;
+                Вычитание<input name="operations" type="radio" value="sub">&nbsp;&nbsp;
+                Умножение<input name="operations" type="radio" value="mul">&nbsp;&nbsp;
+                Деление<input name="operations" type="radio" value="div">&nbsp;&nbsp;               
+            </p>
+            <p>
+                x = <input type="number" name="n_X">
+                y = <input type="number" name="n_Y">
+            </p>
+            <p>
+                <input type="button" value="Результат" onclick="operation()">
+            </p>
+            <p>
+                <output name="output_11">
+            </p>                
+        </form>
+
+        <form name="form_12">
+            <p>
+                12. Имеется пронумерованный список товара: 
+                1) плащ, 2) шапка, 3) сапоги, 4) шарф, 5) перчатки. 
+                Составить программу, которая по номеру товара выводит на экран ее название.
+            </p>  
+            <p>
+                1<input name="products" type="radio" value="raincoat" onclick="showProduct()">&nbsp;&nbsp;
+                2<input name="products" type="radio" value="hat" onclick="showProduct()">&nbsp;&nbsp;
+                3<input name="products" type="radio" value="boots" onclick="showProduct()">&nbsp;&nbsp;
+                4<input name="products" type="radio" value="scarf" onclick="showProduct()">&nbsp;&nbsp;
+                5<input name="products" type="radio" value="gloves" onclick="showProduct()">
+            </p>
+            <p>
+                <output name="output_12">
+            </p>                
+        </form>
+
+        <form name="form_13">
+            <p>
+                13. Для целого числа и от 1 до 99 напечатать фразу «Мне k лет», 
+                учитывая при этом, что при некоторых значениях k слово «лет» 
+                надо заменить на слово «год» или «года». Например, 8 лет, 42 года, 1 год.
+            </p>  
+            <p>
+                Возраст: <input name="age" type="number">&nbsp;&nbsp;
+            </p>
+            <p>
+                <input type="button" value="Результат" onclick="showAge()">
+            </p>
+            <p>
+                <output name="output_13">
+            </p>                
+        </form>
+
+        <form name="form_14">
+            <p>
+                14.	Составить программу, которая по введенному библиотечному индексу 
+                выводит название предмета соответствии со следующими данными:
+                10) русский язык, 20) математика, 30) физика, 40) история.
+            </p>  
+            <p>
+                10<input name="libraryIndex" type="radio" value="10" onclick="showByIndex()">&nbsp;&nbsp;
+                20<input name="libraryIndex" type="radio" value="20" onclick="showByIndex()">&nbsp;&nbsp;
+                30<input name="libraryIndex" type="radio" value="30" onclick="showByIndex()">&nbsp;&nbsp;
+                40<input name="libraryIndex" type="radio" value="40" onclick="showByIndex()">&nbsp;&nbsp;               
+            </p>
+            <p>
+                <output name="output_14">
+            </p>                
+        </form>
+
+        <form name="form_15">
+            <p>
+                15. Составить программу, которая по введенному времени суток 
+                выдает их словесную характеристику в соответствии 
+                со следующей шкалой: 5.00 - 9.00 Утро, 9.00 - 19.00 День, 19.00 - 23.00 Вечер, 23.00 - 5.00 Ночь.
+            </p>  
+            <p>
+                Введите время:&nbsp;<input name="time" type="time">           
+            </p>
+            <p>
+                <input type="button" value="Результат" onclick="showTimeOfDay()">
+            </p>
+            <p>
+                <output name="output_15">
+            </p>                
+        </form>
+
+        <form name="form_16">
+            <p>
+                16. Составить программу, которая по введенному коду региона 
+                автомобильного номера определяет его название. 
+            </p>  
+            <p>
+                Введите код региона:&nbsp;<input name="licensePlateNumber" type="text">           
+            </p>
+            <p>
+                <input type="button" value="Результат" onclick="showRegion()">
+            </p>
+            <p>
+                <output name="output_16">
+            </p>                
+        </form>
+
+        <form name="form_17">
+            <p>
+                17.	Составить программу, которая по введенному номеру класса 
+                выводит фразу «Привет, k- классник». 
+                Например, если k=5 «Привет, пятиклассник»; при k=9 «Привет, девятиклассник».
+            </p>  
+            <p>
+                Класс: <input name="schoolGrade" type="number">
+                <input type="button" value="Результат" onclick="showSchoolGrade()">
+            </p>
+            <p>
+                <output name="output_17">
+            </p>                
+        </form>
+
+        <form name="form_18">
+            <p>
+                18. Написать программу, которая по введенному 
+                значению градуса угла определяла его тип: острый, прямой, тупой.
+            </p>  
+            <p>
+                Угол: <input name="angle" type="number">
+                <input type="button" value="Результат" onclick="showAngleType()">
+            </p>
+            <p>
+                <output name="output_18">
+            </p>                
+        </form>
+
+    </body>
+</html>

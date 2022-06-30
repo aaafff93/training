@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Массивы</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='mystyle.css'>
+    <script src='myscript.js'></script>
+</head>
+<body>
+
+    <div>
+        <p>
+            1. Количество четных чисел.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numberOfEven()">
+        </p>
+        <p>
+            <output id="output_1"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            2. Номер минимального числа.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numberOfMin()">
+        </p>
+        <p>
+            <output id="output_2"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            3. Произведение всех чисел.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="multiplyAllNumbers()">
+        </p>
+        <p>
+            <output id="output_3"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            4. Номер первого отрицательного числа.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numberOfFirstNegative()">
+        </p>
+        <p>
+            <output id="output_4"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            5. Количество чисел равных X=<input type="number" id="number_X">.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numbersEqualToX()">
+        </p>
+        <p>
+            <output id="output_5"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            6. Количество отрицательных чисел.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numberOfNegative()">
+        </p>
+        <p>
+            <output id="output_6"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            7. Максимальное отрицательное число.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="maxNegativeNumber()">
+        </p>
+        <p>
+            <output id="output_7"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            8. Номер первого положительного числа.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numberOfFirstPositive()">
+        </p>
+        <p>
+            <output id="output_8"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            9. Минимальное положительное число.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="minNPositiveNumber()">
+        </p>
+        <p>
+            <output id="output_9"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            10. Номер максимального числа.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numberOfMax()">
+        </p>
+        <p>
+            <output id="output_10"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            11. Количество нечетных чисел.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numberOfOdd()">
+        </p>
+        <p>
+            <output id="output_11"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            Количество чисел меньших X=<input type="number" id="numb_X">.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="numbersLessThanX()">
+        </p>
+        <p>
+            <output id="output_12"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            13. Разность сумм четных и нечетных элементов массива.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="differenceBetweenTheSumOfEvenAndOdd()">
+        </p>
+        <p>
+            <output id="output_13"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            14. Отношение сумм четных и нечетных элементов массива.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="divTheSumsOfEvenAndOdd()">
+        </p>
+        <p>
+            <output id="output_14"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            15. Из заданного массива сформировать новый, 
+            состоящий только из положительных элементов исходного массива.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="onlyPositiveNumbers()">
+        </p>
+        <p>
+            <output id="output_15"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            16. Количество чисел больших значения последнего элемента массива.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="greaterThanlast()">
+        </p>
+        <p>
+            <output id="output_16"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            17. Все отрицательные числа массива заменить нулями.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="replaceNegativeWithZeros()">
+        </p>
+        <p>
+            <output id="output_17"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            18. Разность максимального и минимального элемента массива.
+        </p>
+        <p>
+            <input type="button" value="Сгенерировать массив" onclick="differenceBetweenMaxAndMin()">
+        </p>
+        <p>
+            <output id="output_18"></output>
+        </p>
+    </div>
+
+</body>
+</html>

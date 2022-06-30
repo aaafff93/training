@@ -1,0 +1,35 @@
+div
+{
+    border: 2px solid #8A2BE2; 
+    box-sizing: border-box; 
+    padding: 5px; 
+    margin: 5px;
+}
+
+output
+{
+    background-color: greenyellow;
+}
+
+input
+{
+    width: 100%;
+}
+
+table, th, td
+{
+    border: 1px solid blue;
+    border-collapse: collapse;
+}
+
+sup input
+{
+    font-size: 10px;
+    width: 3%;
+    margin: 2px;
+}
+
+.powers
+{
+    width: 5%;
+}

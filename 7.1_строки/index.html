@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Строки</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='mystyle.css'>
+    <script src='myscript.js'></script>
+</head>
+<body>
+
+    <div>
+        <p>
+            1. Написать программу, подсчитывающую количество вхождений заданной буквы=<input type="text" id="letter"> 
+            в веденной строке=<input type="text" id="str_1">.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfLettersInString()">
+        </p>
+        <p>
+            Ответ: <output id="output_1"></output>
+        </p>
+    </div>  
+
+    <div>
+        <p>
+            2. Написать программу, определяющую число слов в строке=<input type="text" id="str_2">. 
+            Одно слово от другого отделяются одним пробелом.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfWords()">
+        </p>
+        <p>
+            Ответ: <output id="output_2"></output>
+        </p>
+    </div> 
+
+    <div>
+        <p>
+            3. Составить программу, определяющую, является ли введенное слово=<input type="text" id="str_3"> 
+            числом.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="isTheStringANubmer()">
+        </p>
+        <p>
+            Ответ: <output id="output_3"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            4. Составить программу, удаляющую в строке=<input type="text" id="str_4">  
+            все пробелы.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="removeSpaces()">
+        </p>
+        <p>
+            Ответ: <output id="output_4"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            5. Написать программу, вычисляющую длину самого короткого слова 
+            в предложении из трех слов=<input type="text" id="str_5">, 
+            разделенных пробелами.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="lengthOfTheShortestWord()">
+        </p>
+        <p>
+            Ответ: <output id="output_5"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            6. Написать программу, вычисляющую количество буков «у» в слове=<input type="text" id="str_6"> 
+            стоит на четных местах.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="letterOnEvenPosition()">
+        </p>
+        <p>
+            Ответ: <output id="output_6"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            7. Составить программу, заменяющую в заданном слове=<input type="text" id="str_7"> 
+            все буквы «о» пробелах.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="replaceLetter()">
+        </p>
+        <p>
+            Ответ: <output id="output_7"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            8. Даны два слова одной длинны=<input type="text" id="str_8">. 
+            Написать программу, меняющую местами буквы этих слов, стоящих на четных позициях. 
+            Например, даны слова «Слон» и «Снег», результатом работы программы будет «Сног» и «Слен». 
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="replaceLettersOnEvenPositions()">
+        </p>
+        <p>
+            Ответ: <output id="output_8"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            9. Даны фамилия, имя и отчество учащегося=<input type="text" id="str_9">, 
+            разделенные пробелом. 
+            Написать программу, которая выводит на экран фамилию и инициалы.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="showInitials()">
+        </p>
+        <p>
+            Ответ: <output id="output_9"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            10. Написать программу, удаляющую из заданного слова=<input type="text" id="str_10"> 
+            все буквы, совпадающие с его последней буквой.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="deleteSimilarLastLetter()">
+        </p>
+        <p>
+            Ответ: <output id="output_10"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            11. Составить программу, удаляющую из слова S=<input type="text" id="str_S">  
+            все буквы, которые есть в слове V=<input type="text" id="str_N">.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="deleteLettersFromAnotherString()">
+        </p>
+        <p>
+            Ответ: <output id="output_11"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            12. Составить программу, удаляющую каждую третью букву в 
+            веденном слове=<input type="text" id="str_12">.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="deleteEveryThirdLetter()">
+        </p>
+        <p>
+            Ответ: <output id="output_12"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            13. Составить программу вычисления суммы мест, на которых в слове S=<input type="text" id="str_13"> 
+            стоят буквы «а» и «я».
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="sumOfPositions()">
+        </p>
+        <p>
+            Ответ: <output id="output_13"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            14. Составить программу, выясняющую, на гласную или согласную букву 
+            оканчивается слово S=<input type="text" id="str_14">.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="vowelOrConsonantLetter()">
+        </p>
+        <p>
+            Ответ: <output id="output_14"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            15. Написать программу, подсчитывающую число различных букв в 
+            слове=<input type="text" id="str_15">.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfDifferentLetters()">
+        </p>
+        <p>
+            Ответ: <output id="output_15"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            16. Написать программу, подсчитывающую количество цифровых символов 
+            в введенном предложении=<input type="text" id="str_16">.        
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfDigitalCharacters()">
+        </p>
+        <p>
+            Ответ: <output id="output_16"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            17. Даны строки S1=<input type="text" id="str_S1"> 
+            и S2=<input type="text" id="str_S2"> . 
+            Удалить из строки S1 все подстроки S2.        
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="removeAllSubstringsFromAString()">
+        </p>
+        <p>
+            Ответ: <output id="output_17"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            18. Дан символ С=<input type="text" id="char_c"> 
+            и строки S1=<input type="text" id="st_S1">  
+            и S2=<input type="text" id="st_S2"> . 
+            Перед каждым вхождением символа С в строку S1 вставить строку S2.       
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="insertString()">
+        </p>
+        <p>
+            Ответ: <output id="output_18"></output>
+        </p>
+    </div>
+
+</body>

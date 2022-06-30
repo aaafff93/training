@@ -1,0 +1,399 @@
+<html>
+    <head>
+        <title>Привет</title>
+        <link rel="stylesheet" href="mystyle.css">
+    </head>
+    <body>
+        <script src="myscript.js"></script>
+
+        <div>
+            <p>
+                1. Составить программу, которая из трех вводимых пользователем
+                целых чисел выводит наибольшее число.
+            </p>
+            <p>
+                Число 1: <input type="number" id="number_1">
+                Число 2: <input type="number" id="number_2">
+                Число 3: <input type="number" id="number_3">
+            </p>
+            <p>
+                <button id="button_1" onclick="findMax(
+                                                    document.getElementById('number_1').value,
+                                                    document.getElementById('number_2').value,
+                                                    document.getElementById('number_3').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_1"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                2. Даны две точки А(x1=<input type="number" id="number_x1">, y1=<input type="number" id="number_y1">) и
+                В(x2=<input type="number" id="number_x2">, y2=<input type="number" id="number_y2">).
+                Написать программу, определяющую, которая из точек находится ближе к началу координат.
+            </p>
+            <p>
+                <button id="button_2" onclick="coordinates(
+                                                    document.getElementById('number_x1').value,
+                                                    document.getElementById('number_y1').value,
+                                                    document.getElementById('number_x2').value,
+                                                    document.getElementById('number_y2').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_2"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                3. Написать программу нахождения суммы большего и меньшего из 3 чисел.
+            </p>
+            <p>
+                Число 1: <input type="number" id="digit_1">
+                Число 2: <input type="number" id="digit_2">
+                Число 3: <input type="number" id="digit_3">
+            </p>
+            <p>
+                <button id="button_3" onclick="sumMaxAndMin(
+                                                    document.getElementById('digit_1').value,
+                                                    document.getElementById('digit_2').value,
+                                                    document.getElementById('digit_3').value,
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_3"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                4. Дано число <input type="number" id="number_x">.
+                Напечатать в порядке возрастания числа: sin(x), cos(x). Ln(x).
+                Если при каком-либо x некоторые из выражений не имеют смысла,
+                вывести сообщение об этом и сравнивать значения только тех, которые имеют смысл.
+            </p>
+            <p>
+                <button id="button_4" onclick="ascending(
+                                                    document.getElementById('number_x').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_4"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                5. Написать программу, которая по заданным трем числам определяет,
+                является ли сумма каких-либо двух из них положительной.
+            </p>
+            <p>
+                Число 1: <input type="number" id="num_1">
+                Число 2: <input type="number" id="num_2">
+                Число 3: <input type="number" id="num_3">
+            </p>
+            <p>
+                <button id="button_5" onclick="isSumPositive(
+                                                    document.getElementById('num_1').value,
+                                                    document.getElementById('num_2').value,
+                                                    document.getElementById('num_3').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_5"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                6. Найти max{min{<input type="number" id="num_a">, <input type="number" id="num_b">},
+                min{<input type="number" id="num_c">, <input type="number" id="num_d">}}.
+            </p>
+            <p>
+                <button id="button_6" onclick="maxMin(
+                                                    document.getElementById('num_a').value,
+                                                    document.getElementById('num_b').value,
+                                                    document.getElementById('num_c').value,
+                                                    document.getElementById('num_d').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_6"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                7. Перераспределить значения переменных x = <input type="number" id="num_x"> 
+                и y = <input type="number" id="num_y">  так, 
+                чтобы в x оказалось большее из этих значений, а в y — меньшее.
+            </p>
+            <p>
+                <button id="button_7" onclick="replacingVariables(
+                                                    document.getElementById('num_x').value,
+                                                    document.getElementById('num_y').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_7"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                8. Подсчитать количество положительных чисел среди чисел 
+                a = <input type="number" id="number_a">, 
+                b = <input type="number" id="number_b">, 
+                c = <input type="number" id="number_c">.
+            </p>
+            <p>
+                <button id="button_8" onclick="positiveNumbersCount(
+                                                    document.getElementById('number_a').value,
+                                                    document.getElementById('number_b').value, 
+                                                    document.getElementById('number_c').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_8"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                9. Определить, является ли целое число N = <input type="number" id="number_N"> четным двузначным числом.
+            </p>
+            <p>
+                <button id="button_9" onclick="isNumberTwoDigit(
+                                                    document.getElementById('number_N').value,
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_9"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                10. Даны действительные числа 
+                а = <input type="number" id="numb_a">, 
+                b = <input type="number" id="numb_b">, 
+                с = <input type="number" id="numb_с">. 
+                Удвоить эти числа, если а < b < с, и заменить их абсолютными значениями, если это не так.
+            </p>
+            <p>
+                <button id="button_10" onclick="doublingNumbers(
+                                                    document.getElementById('numb_a').value, 
+                                                    document.getElementById('numb_b').value, 
+                                                    document.getElementById('numb_с').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_10"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                11. Даны три действительные числа. 
+                Возвести в квадрат те из них, значения которых неотрицательны, 
+                и в четвертую степень - отрицательные.
+            </p>
+            <p>
+                Число 1: <input type="number" id="dig_1">
+                Число 2: <input type="number" id="dig_2">
+                Число 3: <input type="number" id="dig_3">
+            </p>
+            <p>
+                <button id="button_11" onclick="powersOfNumbers(
+                                                    document.getElementById('dig_1').value, 
+                                                    document.getElementById('dig_2').value, 
+                                                    document.getElementById('dig_3').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_11"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                12. Написать программу, которая анализирует человека по 
+                возрасту и относит к одной из четырех групп: 
+                дошкольник, ученик, работник, пенсионер. 
+                Возраст вводится с клавиатуры = <input type="number" id="age">.
+            </p>
+            <p>
+                <button id="button_12" onclick="separateByAge(
+                                                    document.getElementById('age').value 
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_12"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                13. Даны три числа 
+                а = <input type="number" id="n_a">, 
+                b = <input type="number" id="n_b">, 
+                с = <input type="number" id="n_c">. 
+                Определить, какое из них равно d = <input type="number" id="n_d">. 
+                Если ни одно не равно d, то найти max{d-a, d-b, d-c}.
+            </p>
+            <p>
+                <button id="button_13" onclick="findEqual(
+                                                    document.getElementById('n_a').value, 
+                                                    document.getElementById('n_b').value, 
+                                                    document.getElementById('n_c').value, 
+                                                    document.getElementById('n_d').value 
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_13"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                14. Определить правильность даты, введенной с клавиатуры (число - от 1 до 31, месяц - от 1 до 12). 
+                Если введены некорректные данные, то сообщить об этом.
+            </p>
+            <p>
+                Число 1: <input type="number" id="day">
+                Число 2: <input type="number" id="month">
+            </p>
+            <p>
+                <button id="button_14" onclick="isDateCorrect(
+                                                    document.getElementById('day').value, 
+                                                    document.getElementById('month').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_14"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                15. В трех палатках разместилось a = <input type="number" id="allTents"> человек. 
+                В первой и второй палатке b = <input type="number" id="firstAndSecondTents"> человек, 
+                во второй и третьей с = <input type="number" id="secondAndThirdTents"> человек. 
+                Составить программу, которая находит палатку с наибольшим количеством человек.
+            </p>
+            <p>
+                <button id="button_15" onclick="maxPeopleInTent(
+                                                    document.getElementById('allTents').value, 
+                                                    document.getElementById('firstAndSecondTents').value, 
+                                                    document.getElementById('secondAndThirdTents').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_15"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                16. Даны три точки 
+                А(x1=<input type="number" id="point_X1">, y1=<input type="number" id="point_Y1">), 
+                В(x2=<input type="number" id="point_X2">, y2=<input type="number" id="point_Y2">) и 
+                C(x3=<input type="number" id="point_X3">, y3=<input type="number" id="point_Y3">). 
+                Написать программу, определяющую, между какими двумя точками самое большое расстояние.
+            </p>
+            <p>
+                <button id="button_16" onclick="maximumDistanceBetweenPoints(
+                                                    document.getElementById('point_X1').value, 
+                                                    document.getElementById('point_Y1').value, 
+                                                    document.getElementById('point_X2').value, 
+                                                    document.getElementById('point_Y2').value, 
+                                                    document.getElementById('point_X3').value, 
+                                                    document.getElementById('point_Y3').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_16"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                17.	Даны действительные числа 
+                х = <input type="number" id="p_X">, 
+                у = <input type="number" id="p_Y">
+                (х не равно у).  
+                Меньшее из этих двух чисел заменить их полусуммой, 
+                а большее - их удвоенным произведением.
+            </p>
+            <p>
+                <button id="button_17" onclick="minimumOfTwoNumbers(
+                                                    document.getElementById('p_X').value, 
+                                                    document.getElementById('p_Y').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_17"></output>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                Найти 
+                min
+                {max{a = <input type="number" id="num_A">, b = <input type="number" id="num_B">}, 
+                max{c = <input type="number" id="num_C">, d = <input type="number" id="num_D">}}.
+            </p>
+            <p>
+                <button id="button_18" onclick="minOfMax(
+                                                    document.getElementById('num_A').value, 
+                                                    document.getElementById('num_B').value, 
+                                                    document.getElementById('num_C').value, 
+                                                    document.getElementById('num_D').value
+                                                    )">
+                    Вычислить
+                </button>
+            </p>
+            <p>
+                Ответ: <output id="output_18"></output>
+            </p>
+        </div>
+
+    </body>
+</html>

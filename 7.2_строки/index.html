@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>7.2. Строки</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='mystyle.css'>
+    <script src='myscript.js'></script>
+</head>
+<body>
+
+    <div>
+        <p>
+            1. Дана строка=<input type="text" id="str_1">, 
+            состоящая из групп нулей и единиц. Посчитать количество нулей и единиц.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfZerosAndOnes()">
+        </p>
+        <p>
+            Ответ: <output id="output_1"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            2. Посчитать в строке=<input type="text" id="str_2"> количество слов.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfWords()">
+        </p>
+        <p>
+            Ответ: <output id="output_2"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            3. Найти количество знаков препинания в исходной строке=<input type="text" id="str_3">.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfPunctuationMarks()">
+        </p>
+        <p>
+            Ответ: <output id="output_3"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            4. Дана строка символов=<input type="text" id="str_4">. 
+            Вывести на экран цифры, содержащиеся в строке.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numbersInAString()">
+        </p>
+        <p>
+            Ответ: <output id="output_4"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            5. Дана строка символов, состоящая из произвольных десятичных цифр, 
+            разделенных пробелами=<input type="text" id="str_5">. 
+            Вывести количество четных чисел в этой строке.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfEven()">
+        </p>
+        <p>
+            Ответ: <output id="output_5"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            6. Дана строка символов=<input type="text" id="str_6">. 
+            Вывести на экран количество строчных русских букв, входящих в эту строку.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="numberOfRussianLetters()">
+        </p>
+        <p>
+            Ответ: <output id="output_6"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            7. Дана строка символов=<input type="text" id="str_7">. 
+            Вывести на экран только строчные русские буквы, входящие в эту строку.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="showOnlyRussianLetters()">
+        </p>
+        <p>
+            Ответ: <output id="output_7"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            8.Дана строка символов, состоящая из произвольного текста на английском языке, 
+            слова разделены пробелами=<input type="text" id="str_8">. 
+            В каждом слове заменить первую букву на прописную.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="upperCaseFirstLetters()">
+        </p>
+        <p>
+            Ответ: <output id="output_8"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            9.Дана строка символов, состоящая из произвольного текста на английском языке, 
+            слова разделены пробелами=<input type="text" id="str_9">. 
+            Удалить первую букву в каждом слове.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="deleteFirstLetters()">
+        </p>
+        <p>
+            Ответ: <output id="output_9"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            10.	Дана строка символов, состоящая из произвольного текста на английском языке, 
+            слова разделены пробелами=<input type="text" id="str_10">. 
+            Поменять местами i-ю и j-ю буквы. 
+            Для ввода i=<input type="number" id="i"> и j=<input type="number" id="j"> на форме добавить свои поля ввода.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="swapPlaces()">
+        </p>
+        <p>
+            Ответ: <output id="output_10"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            11. Дана строка символов, состоящая из произвольного текста на английском языке, 
+            слова разделены пробелами=<input type="text" id="str_11">. 
+            Поменять местами первую и последнюю буквы каждого слова.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="swapTheFirstAndLastLetterInEachWord()">
+        </p>
+        <p>
+            Ответ: <output id="output_11"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            12. Дана строка символов, состоящая из произвольного текста на английском языке, 
+            слова разделены пробелами=<input type="text" id="str_12">. 
+            Заменить все буквы латинского алфавита на знак «+».
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="replaceLatinWithThePlus()">
+        </p>
+        <p>
+            Ответ: <output id="output_12"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            13. Дана строка символов, содержащая некоторый текст на русском языке=<input type="text" id="str_13">. 
+            Заменить все большие буквы «А» на символ «*».
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="replaceLetterWithAsterisk()">
+        </p>
+        <p>
+            Ответ: <output id="output_13"></output>
+        </p>
+    </div>
+        
+    <div>
+        <p>
+            14. Дана строка символов, содержащая некоторый текст=<input type="text" id="str_14">. 
+            Разработать программу, которая определяет, является ли данный текст палиндромом, 
+            т.е. читается ли он слева направо так же, как и справа налево 
+            (например, «А роза упала на лапу Азора»).
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="isTheWordAPalindrome()">
+        </p>
+        <p>
+            Ответ: <output id="output_14"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            15. Дана строка символов, состоящая из произвольного текста на английском языке, 
+            слова разделены пробелами=<input type="text" id="str_15">. 
+            Сформировать новую строку, состоящую из чисел длин слов в исходной строке.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="wordLengths()">
+        </p>
+        <p>
+            Ответ: <output id="output_15"></output>
+        </p>
+    </div>
+
+</body>
+</html>

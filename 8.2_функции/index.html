@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>8.2. Функции</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='mystyle.css'>
+    <script src='myscript.js'></script>
+</head>
+<body>
+
+    <div>
+        <p>
+            1. Вводятся 3 натуральных числа. 
+            Найти произведение цифр каждого из них 
+            (создать функцию для нахождения произведения цифр произвольного натурального числа).  
+        </p>
+        <p>
+            Первое число=<input type="number" id="number_1"><br>
+            Второе число=<input type="number" id="number_2"><br>
+            Третье число=<input type="number" id="number_3"><br>
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="multNumbers()">
+        </p>
+        <p>
+            Ответ: <output id="output_1"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            2. Вычислить (
+            <input class="powers" type="number" id="x_1_2"><sup><input type="number" id="y_1_2"></sup> + 
+            <input class="powers" type="number" id="x_2_2"><sup><input type="number" id="y_2_2"></sup>) / 
+            <input class="powers" type="number" id="x_3_2"><sup><input type="number" id="y_3_2"></sup>, 
+            создав функцию для вычисления степени.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="power_2()">
+        </p>
+        <p>
+            Ответ: <output id="output_2"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            3. Создать процедуру для вывода таблицы значений функции 
+            y=sin(x + 1)<sup>2</sup> для х от 
+            a=<input type="number" id="a_3"> до 
+            b=<input type="number" id="b_3"> с шагом 
+            h=<input type="number" id="h_3">. 
+            Вывести две таблицы: а) для  х от 2 до 3 с шагом 0.1 и б) для  х от -2 до 3 с шагом 0.2.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="sinX()">
+        </p>
+        <p>
+            Ответ: <output id="output_3"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            4. Найти максимальное из 
+            A=<input type="number" id="A_10">, 
+            B=<input type="number" id="B_10">, 
+            C=<input type="number" id="C_10">, 
+            D=<input type="number" id="D_10">, 
+            создав функцию выбора минимального из двух произвольных чисел.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="showMaximun()">
+        </p>
+        <p>
+            Ответ: <output id="output_4"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            8. Вводятся 4 натуральных числа. 
+            Определить, у какого из них среднее арифметическое цифр больше 
+            (создать функцию для нахождения среднего арифметического цифр произвольного натурального числа).  
+        </p>
+        <p>
+            Первое число:<input type="number" id="firstNumber"><br>
+            Второе число:<input type="number" id="secondNumber"><br>
+            Третье число:<input type="number" id="thirdNumber"><br>
+            Четвёртое число:<input type="number" id="fourthNumber"><br>
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="arithmeticMean()">
+        </p>
+        <p>
+            Ответ: <output id="output_8"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            9. Создать процедуру для вывода таблицы значений функции 
+            y=сtg(x-2) для х от 
+            a=<input type="number" id="a_9"> до 
+            b=<input type="number" id="b_9"> с шагом 
+            h=<input type="number" id="h_9">. Вывести две таблицы: 
+            а) для  х от 2 до 4 с шагом 0.2 и б) для  х от 1 до 10 с шагом 0.2.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="cotanX()">
+        </p>
+        <p>
+            Ответ: <output id="output_9"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            10. Создать процедуру для вывода таблицы значений функции y = x<sup>2</sup> + 2x + 3 для х от 
+            a=<input type="number" id="a_10"> до 
+            b=<input type="number" id="b_10"> с шагом 
+            h=<input type="number" id="h_10">. 
+            Вывести две таблицы: 
+            а) для  х от 1 до 2 с шагом 0.1 и б) для х от 2 до 5 с шагом 0.5.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="functionX()">
+        </p>
+        <p>
+            Ответ: <output id="output_10"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            14. Вычислить (
+            <input class="powers" type="number" id="x_1_14"><sup><input type="number" id="y_1_14"></sup> - 
+            <input class="powers" type="number" id="x_2_14"><sup><input type="number" id="y_2_14"></sup>) / 
+            <input class="powers" type="number" id="x_3_14"><sup><input type="number" id="y_3_14"></sup>, 
+            создав функцию для вычисления степени x<sup>y</sup>
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="power_14()">
+        </p>
+        <p>
+            Ответ: <output id="output_14"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            15. Создать процедуру для вывода таблицы значений функции 
+            y=2tg3x + 1 для х от 
+            a=<input type="number" id="a_15"> до 
+            b=<input type="number" id="b_15"> с шагом 
+            h=<input type="number" id="h_15">. 
+            Вывести две таблицы: 
+            а) для х от 1 до 2 с шагом 0.1 и б) для х от 5 до 10 с шагом 0.5.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="tanX()">
+        </p>
+        <p>
+            Ответ: <output id="output_15"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            16. Создать процедуру для вывода таблицы значений функции 
+            y=сtg(x + 1) для х от 
+            a=<input type="number" id="a_16"> до 
+            b=<input type="number" id="b_16"> с шагом 
+            h=<input type="number" id="h_16">. Вывести две таблицы: 
+            а) для х от 2 до 4 с шагом 0.2 и б) для  х от 1 до 10 с шагом 0.5.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="cotanX_16()">
+        </p>
+        <p>
+            Ответ: <output id="output_16"></output>
+        </p>
+    </div>
+
+    <div>
+        <p>
+            17. Создать процедуру для вывода таблицы значений функции y = x<sup>3</sup> + 5 для х от 
+            a=<input type="number" id="a_17"> до 
+            b=<input type="number" id="b_17"> с шагом 
+            h=<input type="number" id="h_17">. 
+            Вывести две таблицы: 
+            а) для х от 1 до 2 с шагом 0.1 и б) для х от 2 до 5 с шагом 0.5.
+        </p>
+        <p>
+            <input type="button" value="Рассчитать" onclick="functionX_17()">
+        </p>
+        <p>
+            Ответ: <output id="output_17"></output>
+        </p>
+    </div>
+
+</body>
+</html>
